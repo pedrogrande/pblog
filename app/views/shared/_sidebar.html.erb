@@ -1,14 +1,11 @@
 <div class="col-sm-3 blog-sidebar">
-  <div class="sidebar-module sidebar-module-inset">
-    <h4><i class="fa fa-info-circle fa-fw"></i> About</h4>
-    <p><%= @settings.about_html.html_safe %></p>
-  </div>
-  <%= render 'shared/share_links' %>
+  <%= render 'shared/sidebar/about' %>
+  <%= render 'shared/sidebar/share_links' %>
   <% if @settings.tags %>
-    <%= render 'shared/tags' %>
+    <%= render 'shared/sidebar/tags' %>
   <% end %>
   <% if @settings.archives %>
-    <%= render 'shared/archives' %>
+    <%= render 'shared/sidebar/archives' %>
   <% end %>
-  <%= render 'shared/links' %>
+  <%= render 'shared/sidebar/links' %>
 </div><!-- /.blog-sidebar -->
