@@ -18,7 +18,7 @@
       <%= image_tag @setting.author_image_url(:thumbnail), class: 'img-thumbnail' %>
     <% end %>
     <%= f.input :author_image %>
-    <%= f.input :contact_email, hint: "Leave blank if you don't want your email address displayed" %>
+    <%= f.input :contact_email, hint: "Enquiry form emails will be sent here." %>
     <%= f.input :about_lead, label: 'About author (Use markdown only)' %>
     <h3>Sidebar options</h3>
     <%= f.input :tags, label: 'Show tags' %>
