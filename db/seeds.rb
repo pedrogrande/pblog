@@ -10,7 +10,7 @@ if User.count < 1
 
   Post-ironic four dollar toast crucifix readymade fanny pack, kogi sriracha lyft scenester bitters chambray raw denim. IPhone pickled artisan, heirloom leggings austin ugh XOXO kombucha. Bespoke austin knausgaard waistcoat pabst. Normcore vegan intelligentsia, echo park taxidermy gochujang ramps PBR&B messenger bag direct trade cred cold-pressed woke ethical brunch. VHS live-edge vinyl, fanny pack fam shabby chic normcore butcher seitan scenester cred. Raw denim single-origin coffee normcore post-ironic, street art farm-to-table woke semiotics hoodie leggings polaroid brooklyn tattooed banh mi. Raw denim hot chicken austin shabby chic banjo, coloring book yuccie tilde church-key pinterest.')
 end
-Setting.destroy_all
+# Setting.destroy_all
 user = User.first
 default_settings = Setting.create(
   blog_title: 'Blog title',
