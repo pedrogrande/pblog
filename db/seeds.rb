@@ -19,8 +19,9 @@ default_settings = Setting.create(
   tags: true,
   archives: true,
   contact_email: user.email,
-  github: 'https://github.com/pedrogrande',
-  twitter: 'https://www.twitter.com/pedrogrande',
+  github: 'your_handle',
+  twitter: 'your_handle',
+  linkedin: 'your_name'
   author_name: 'Joe Bloggs',
   instagram: 'pedrogrande',
   navbar_color: '#428BCA',
