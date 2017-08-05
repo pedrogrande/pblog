@@ -20,7 +20,9 @@ h6, .h6 {
 }
 .blog-header {
     background-color: <%= @user_settings.header_background_color %>;
+    <% unless @user_settings.header_background_image.nil? %>
     background: <%= @user_settings.header_background_color %> url(<%= asset_path(@user_settings.header_background_image_url) %>) no-repeat fixed center;
     background-size: cover;
+    <% end %>
 }
 </style>

@@ -25,7 +25,7 @@ default_settings = Setting.create(
   instagram: 'pedrogrande',
   navbar_color: '#428BCA',
   header_background_color: '#ddd',
-  header_background_image: '',
+  header_background_image: 'http://res.cloudinary.com/cfrebooted/image/upload/v1500354228/kgjrge9e7oct2ildggdh.jpg',
   header_font: 'Roboto',
   text_font: 'Roboto Slab',
   share_links_top: false,
