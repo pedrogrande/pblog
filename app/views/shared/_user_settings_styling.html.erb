@@ -1,0 +1,26 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=<%= @user_settings.header_font.titleize.parameterize(separator: '+', preserve_case: true) %>:<%= @user_settings.header_font_weight %>');
+@import url('https://fonts.googleapis.com/css?family=<%= @user_settings.text_font.titleize.parameterize(separator: '+', preserve_case: true) %>');
+body {
+  font-family: <%= @user_settings.text_font %>;
+  color: <%= @user_settings.text_color %>;
+}
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: <%= @user_settings.header_font %>;
+  font-weight: <%= @user_settings.header_font_weight %>;
+  color: <%= @user_settings.header_color %>;
+}
+.blog-masthead {
+  background-color: <%= @user_settings.navbar_color %>;
+}
+.blog-header {
+    background-color: <%= @user_settings.header_background_color %>;
+    background: <%= @user_settings.header_background_color %> url(<%= asset_path(@user_settings.header_background_image_url) %>) no-repeat fixed center;
+    background-size: cover;
+}
+</style>

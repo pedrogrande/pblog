@@ -1,6 +1,12 @@
 <footer class="blog-footer">
-  <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+  <p>Blog template built by <a href="https://twitter.com/pedrogrande">@pedrogrande</a>.</p>
   <p>
-    <a href="#">Back to top</a>
+    <a href="#" id="back-to-top">Back to top</a>
+    <br>
+    <% if user_signed_in? %>
+    <%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
+    <% else %>
+    <a href="users/sign_in">Sign in</a>
+    <% end %>
   </p>
 </footer>

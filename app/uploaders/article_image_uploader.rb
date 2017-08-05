@@ -11,4 +11,8 @@ class ArticleImageUploader < CarrierWave::Uploader::Base
     resize_to_fit(100, 100)
   end
 
+  def extension_whitelist
+    %w(jpg jpeg gif png)
+  end
+
 end

@@ -1,10 +1,10 @@
 <div class="col-sm-3 blog-sidebar">
   <%= render 'shared/sidebar/about' %>
   <%= render 'shared/sidebar/share_links' %>
-  <% if @settings.tags %>
+  <% if @user_settings.tags %>
     <%= render 'shared/sidebar/tags' %>
   <% end %>
-  <% if @settings.archives %>
+  <% if @user_settings.archives %>
     <%= render 'shared/sidebar/archives' %>
   <% end %>
   <%= render 'shared/sidebar/links' %>

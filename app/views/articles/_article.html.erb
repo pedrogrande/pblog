@@ -12,8 +12,8 @@
         <%= link_to 'EDIT', edit_article_path(article), class: 'btn btn-warning btn-xs' %>
       <% end %>
     </div>
-  
-  <p class="blog-post-meta">Published by <%= link_to @settings.author_name, about_path %> on <%= article.created_at.strftime("#{article.created_at.day.ordinalize} %B, %Y") %></p>
+
+  <p class="blog-post-meta">Published by <%= link_to @user_settings.author_name, about_path %> on <%= article.created_at.strftime("#{article.created_at.day.ordinalize} %B, %Y") %></p>
 
   <p class="lead"><%= article.lead %></p>
   <% unless current_page?(root_path) or current_page?(filtered_articles_path) %>

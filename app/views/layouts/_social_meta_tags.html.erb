@@ -1,26 +1,26 @@
 <!-- Schema.org markup for Google+ -->
-    <meta itemprop="name" content="<%= @settings.blog_title %>">
-    <meta itemprop="description" content="<%= @settings.about_lead %>">
-    <meta itemprop="image" content="<%= @settings.author_image_url %>">
+    <meta itemprop="name" content="<%= @user_settings.blog_title %>">
+    <meta itemprop="description" content="<%= @user_settings.about_lead %>">
+    <meta itemprop="image" content="<%= @user_settings.author_image_url %>">
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@<%= @settings.twitter %>">
-    <meta name="twitter:title" content="<%= content_for?(:title) ? content_for(:title) : @settings.blog_title %>">
-    <meta name="twitter:description" content="<%= content_for?(:description) ? content_for(:description) : @settings.about_lead %>">
-    <meta name="twitter:creator" content="@<%= @settings.twitter %>">
+    <meta name="twitter:site" content="@<%= @user_settings.twitter %>">
+    <meta name="twitter:title" content="<%= content_for?(:title) ? content_for(:title) : @user_settings.blog_title %>">
+    <meta name="twitter:description" content="<%= content_for?(:description) ? content_for(:description) : @user_settings.about_html.html_safe %>">
+    <meta name="twitter:creator" content="@<%= @user_settings.twitter %>">
     <!-- Twitter summary card with large image must be at least 280x150px -->
-    <meta name="twitter:image:src" content="<%= content_for?(:image) ? content_for(:image) : @settings.author_image_url %>">
+    <meta name="twitter:image:src" content="<%= content_for?(:image) ? content_for(:image) : @user_settings.author_image_url %>">
 
     <!-- Open Graph data -->
-    <meta property="og:title" content="<%= content_for?(:title) ? content_for(:title) : @settings.blog_title %>" />
+    <meta property="og:title" content="<%= content_for?(:title) ? content_for(:title) : @user_settings.blog_title %>" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="http://<%= request.host %>/" />
-    <meta property="og:image" content="<%= content_for?(:image) ? content_for(:image) : @settings.author_image_url %>" />
-    <meta property="og:description" content="<%= content_for?(:description) ? content_for(:description) : @settings.about_lead %>" />
-    <meta property="og:site_name" content="<%= @settings.blog_title %>" />
-    <meta property="article:published_time" content="<%= content_for?(:published) ? content_for(:published) : @settings.created_at %>" />
-    <meta property="article:modified_time" content="<%= content_for?(:modified) ? content_for(:modified) : @settings.updated_at %>" />
+    <meta property="og:image" content="<%= content_for?(:image) ? content_for(:image) : @user_settings.author_image_url %>" />
+    <meta property="og:description" content="<%= content_for?(:description) ? content_for(:description) : @user_settings.about_html.html_safe %>" />
+    <meta property="og:site_name" content="<%= @user_settings.blog_title %>" />
+    <meta property="article:published_time" content="<%= content_for?(:published) ? content_for(:published) : @user_settings.created_at %>" />
+    <meta property="article:modified_time" content="<%= content_for?(:modified) ? content_for(:modified) : @user_settings.updated_at %>" />
     <!-- <meta property="article:section" content="Article Section" /> -->
     <meta property="article:tag" content="<%= content_for?(:tags) ? content_for(:tags) : 'coding, technology, future' %>" />
     <!-- <meta property="fb:admins" content="Facebook numberic ID" /> -->

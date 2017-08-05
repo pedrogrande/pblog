@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
   end
 
   def get_settings
-    @settings = Setting.first
+    @user_settings = Setting.last
   end
 
   def get_blog_host

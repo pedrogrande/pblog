@@ -2,6 +2,8 @@ class Setting < ApplicationRecord
   mount_uploader :author_image, ArticleImageUploader
   validates :blog_title, :subtitle, :author_name, :contact_email, presence: true
 
+  mount_uploader :header_background_image, HeaderBgImageUploader
+
   before_save :parse_about
 
   def parse_about

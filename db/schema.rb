@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170109020352) do
+ActiveRecord::Schema.define(version: 20170127061701) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,12 +48,22 @@ ActiveRecord::Schema.define(version: 20170109020352) do
     t.string   "github"
     t.string   "twitter"
     t.string   "linked_in"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+    t.datetime "created_at",                              null: false
+    t.datetime "updated_at",                              null: false
     t.string   "author_name"
     t.string   "author_image"
     t.string   "instagram"
     t.text     "about_html"
+    t.string   "navbar_color"
+    t.string   "header_background_color"
+    t.string   "header_background_image"
+    t.string   "header_font"
+    t.string   "text_font"
+    t.boolean  "share_links_top",         default: false
+    t.boolean  "share_links_bottom",      default: false
+    t.string   "header_color"
+    t.string   "text_color"
+    t.integer  "header_font_weight"
   end
 
   create_table "taggings", force: :cascade do |t|
