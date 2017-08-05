@@ -2,7 +2,7 @@
   <h4><i class="fa fa-tags fa-fw"></i> Tags</h4>
   <ol class="list-unstyled">
     <% @article_tags.each do |tag| %>
-      <li><%= link_to tag.name.capitalize, filtered_articles_path(tag: tag.name) %> (<%= tag.count %>)</li>
+      <li><span class="badge"><%= tag.count %></span> <%= link_to tag.name.capitalize, filtered_articles_path(tag: tag.name) %></li>
     <% end %>
   </ol>
 </div>
